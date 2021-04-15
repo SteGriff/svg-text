@@ -7,7 +7,7 @@ const svgRender = require("svg-render");
 app.use(express.static("public"));
 
 app.get("/", (request, response) => {
-  response.send("OK");
+  response.redirect("/Use me like this.svg")
 });
 
 app.get("/:text.svg", (request, response) => {

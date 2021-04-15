@@ -6,9 +6,9 @@ Trying out <https://www.npmjs.com/package/text-to-svg>
 
 Also maybe <https://www.npmjs.com/package/svg-render> for PNG if needed?
 
-**I did it!** Wow, that took about an hour tops. Open Source is good.
+**I did it!** Wow, that took about an hour tops. Open Source is good actually.
 
-## "API"
+## API
 
 ### Get an SVG
 
