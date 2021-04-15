@@ -11,6 +11,20 @@ app.get("/", (request, response) => {
 
 app.get("/:text.svg", (request, response) => {
   const text = request.params.text;
+  
+  const svg = makeSvg(text);
+  response.setHeader("content-type", "image/svg+xml");
+  response.send(svg);
+});
+
+app.get("/:text.png", (request, response) => {
+  const text = request.params.text;
+  const svg = makeSvg(text);
+  response.setHeader("content-type", "image/svg+xml");
+  response.send(svg);
+});
+
+const makeSvg = (text) => {
   console.log("Requested:", text);
 
   const attributes = { fill: "white", stroke: "black" };
@@ -24,11 +38,8 @@ app.get("/:text.svg", (request, response) => {
   const svg = svgEngine.getSVG(text, options);
 
   console.log(svg);
-
-  response.setHeader("content-type", "image/svg+xml");
-  response.send(svg);
-  //response.send("You said:" + text);
-});
+  return svg;
+}
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT, () => {
