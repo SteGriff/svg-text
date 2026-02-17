@@ -1,6 +1,6 @@
 # svg-text
 
-**Big idea:** Request an image URL like `svg-text.glitch.me/Hello World.svg` and it returns a dynamic SVG.
+**Big idea:** Request an image URL like `svg-text.sign.me.uk/Hello World.svg` and it returns a dynamic SVG.
 
 Trying out <https://www.npmjs.com/package/text-to-svg>
 
@@ -12,11 +12,11 @@ Also maybe <https://www.npmjs.com/package/svg-render> for PNG if needed?
 
 ### Get an SVG
 
-<https://svg-text.glitch.me/Hello%20World.svg>
+<https://svg-text.sign.me.uk/Hello%20World.svg>
 
 ### Get a PNG
 
-<https://svg-text.glitch.me/Hello%20World.png>
+<https://svg-text.sign.me.uk/Hello%20World.png>
 
 ## Future
 
